@@ -24,6 +24,27 @@ $(document).ready(function() {
 
 	//JQuery: -->
 
+
+
+		$(".animation_directions_1").click(function () {
+  		$("div:eq(0)").show("fast", function () {
+    	// use callee so don't have to name the function
+    	$(this).next().show("fast", arguments.callee);
+  		});
+		});
+		$(".animation_directions_1").click(function () {
+ 	 	$(".animation_directions_1").hide(2000);
+		});
+
+	//JQuery: -->
+
+	$(".animation_directions_5").animated("fadeInRight", "fadeOutDown");
+	$(".animation_directions_6").animated("fadeInRight", "fadeOutDown");
+	$(".animation_directions_7").animated("fadeInRight", "fadeOutDown");
+	$(".animation_directions_8").animated("fadeInRight", "fadeOutDown");
+
+	//JQuery: -->
+
 	$(".left .resume_item").animated("fadeInLeft", "fadeOutDown");
 	$(".right .resume_item").animated("fadeInRight", "fadeOutDown");
 
