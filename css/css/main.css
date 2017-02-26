@@ -82,8 +82,8 @@ section {
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #fff;
-  height: 60px;
-  width: 60px;
+  height: 85px;
+  width: 85px;
   margin-top: -30px;
   margin-left: -30px;
   left: 50%;
@@ -100,9 +100,10 @@ svg {
   position: relative; }
 
 .toggle_mnu {
-  background-color: #000;
-  width: 60px;
-  height: 60px;
+  background-color: #222;
+  border-radius: 3px;
+  width: 56px;
+  height: 56px;
   float: right;
   position: fixed;
   z-index: 100;
@@ -131,8 +132,11 @@ svg {
   background: #e1e1e1;
   border: none;
   border-radius: 4px 4px 4px 4px;
+  transition: top 0.2s, -webkit-transform 0.5s;
   transition: transform 0.5s, top 0.2s;
-  display: block; }
+  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+  display: block;
+  transition-delay: 0,2s, 0s; }
 
 .sw-bottom {
   position: relative;
@@ -142,13 +146,15 @@ svg {
   background: #e1e1e1;
   border: none;
   border-radius: 4px 4px 4px 4px;
+  transition: top 0.2s, -webkit-transform 0.5s;
   transition: transform 0.5s, top 0.2s;
-  transition-delay: 0, 2s, 0s; }
+  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+  transition-delay: 0,2s, 0s; }
 
 .sw-footer {
   position: relative;
   width: 34px;
-  height: 3px;
+  height: 2px;
   top: 6px;
   background: #e1e1e1;
   border: none;
@@ -158,13 +164,21 @@ svg {
 
 .sandwich.active .sw-topper {
   top: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg); }
+
 .sandwich.active .sw-bottom {
   top: -3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
+
 .sandwich.active .sw-footer {
   opacity: 0;
   top: 0;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg); }
 
 .top_mnu {
@@ -200,6 +214,10 @@ svg {
       -webkit-animation-duration: 2s;
       -moz-animation-duration: 2s;
       animation-duration: 2s; }
+    .top_mnu ul li:nth-child(5) a {
+      -webkit-animation-duration: 2.5s;
+      -moz-animation-duration: 2.5s;
+      animation-duration: 2.5s; }
     .top_mnu ul a {
       color: #fff;
       display: block;
@@ -252,6 +270,7 @@ svg {
       font-weight: bold;
       font-size: 2.8em;
       background-color: rgba(0, 0, 0, 0.4);
+      box-shadow: rgba(0, 0, 0, 0.2) 0 -225px 0 500px;
       margin-left: 20px;
       margin-right: 20px;
       -webkit-animation-delay: 1s;
@@ -259,7 +278,7 @@ svg {
       animation-delay: 1s; }
 
 .h_opacify {
-  opacity: 0.3;
+  opacity: .3;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   transition: all 0.2s ease; }
@@ -284,13 +303,16 @@ svg {
 
 .s_about p {
   margin-bottom: 25px; }
+
 .s_about ul,
 .s_about li {
   margin: 0;
   padding: 0;
   list-style-type: none; }
+
 .s_about li {
   margin-bottom: 10px; }
+
 .s_about .social_wrap {
   margin-bottom: 25px; }
 
@@ -304,19 +326,23 @@ svg {
   border-right: #d2d2d2 1px solid; }
   .resume_container .left h3 {
     text-align: right; }
+
 .resume_container .right {
   text-align: left; }
   .resume_container .right h3 {
     text-align: left; }
+
 .resume_container h3 {
   margin-top: 30px;
   letter-spacing: 0;
   font-size: 16px;
   font-weight: 600; }
+
 .resume_container .year {
   color: #fff;
   font-weight: 600;
   font-style: italic; }
+
 .resume_container strong {
   font-weight: 600;
   font-style: normal;
@@ -349,6 +375,7 @@ svg {
   padding: 0;
   margin: 0;
   text-align: center; }
+
 .s_portfolio li {
   display: inline-block;
   margin: 0 10px;
@@ -356,6 +383,7 @@ svg {
   font-size: 12px;
   cursor: pointer;
   line-height: 2; }
+
 .s_portfolio ul {
   margin-bottom: 50px; }
 
@@ -374,7 +402,7 @@ svg {
     text-align: center;
     padding-top: 15%;
     opacity: 0;
-    transition: all 0.5s; }
+    transition: all .5s; }
   .portfolio_item:hover .port_item_cont {
     opacity: 1;
     padding-top: 20%; }
@@ -448,4 +476,22 @@ svg {
     font-size: 12px;
     background-color: transparent; }
 
-/*# sourceMappingURL=main.css.map */
+#s_top {
+  cursor: pointer;
+  position: fixed;
+  opacity: 0.4;
+  right: 4px;
+  bottom: 4px; }
+
+.top_button {
+  width: 35px;
+  height: 35px;
+  background-color: #222;
+  font-size: 17px;
+  padding: 0;
+  bottom: 0;
+  border-radius: 3px;
+  border: medium none;
+  bottom: 20px; }
+  .top_button:hover {
+    transition: all .5s; }

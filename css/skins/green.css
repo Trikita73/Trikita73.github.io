@@ -2,7 +2,7 @@ body {
   color: #222; }
 
 a {
-  color: #2EA2CC; }
+  color: #4a800c; }
 
 p,
 body .main_footer,
@@ -10,13 +10,13 @@ body .main_footer,
   color: #888; }
 
 .color_element {
-  color: #2EA2CC; }
+  color: #4a800c; }
 
 .color_bg {
-  background-color: #2EA2CC; }
+  background-color: #4a800c; }
 
 .color_border {
-  border-color: #2EA2CC; }
+  border-color: #4a800c; }
 
 .bg_light {
   background-color: #FAFAFA; }
@@ -33,7 +33,7 @@ svg path {
   fill: #222; }
 
 .top_mnu a:hover {
-  color: #2EA2CC; }
+  color: #4a800c; }
 
 .top_mnu a {
   letter-spacing: 4px; }
@@ -55,7 +55,7 @@ section h3 {
   color: #888; }
 
 .s_about p:nth-child(even) {
-  color: #2EA2CC; }
+  color: #4a800c; }
 
 .resume_container h3 {
   color: #222;
@@ -68,7 +68,7 @@ section h3 {
   margin-right: 10px; }
 
 .resume_item .year {
-  background-color: #2EA2CC; }
+  background-color: #4a800c; }
 
 .resume_item .resume_description {
   letter-spacing: 1px; }
@@ -79,28 +79,28 @@ section h3 {
 
 .s_portfolio li.active {
   color: #fff;
-  border-bottom: 1px solid #2EA2CC; }
+  border-bottom: 1px solid #4a800c; }
 
 .portfolio_item .port_item_cont a {
-  border-color: #2EA2CC;
-  color: #2EA2CC; }
+  border-color: #4a800c;
+  color: #4a800c; }
 
 .contacts_icon {
-  color: #2EA2CC; }
+  color: #4a800c; }
 
 .text-danger {
-  color: #2EA2CC; }
+  color: #4a800c; }
 
 form input:focus,
 form textarea:focus {
-  border: 1px solid #2EA2CC; }
+  border: 1px solid #4a800c; }
 
 form input,
 form textarea {
   letter-spacing: 2px; }
 
 form button {
-  background-color: #2EA2CC;
+  background-color: #4a800c;
   letter-spacing: 2px; }
 
 form .form-group {
@@ -108,3 +108,10 @@ form .form-group {
   color: #888; }
   form .form-group li {
     color: #FF6347; }
+
+.top_button {
+  color: #fff; }
+  .top_button:hover {
+    color: #4a800c; }
+
+/*# sourceMappingURL=green.css.map */

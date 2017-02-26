@@ -8,7 +8,10 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 	.personal_last_block {
-		margin-top: 35px
+		margin-top: 35px;
+	}
+	.animation_directions_4, .animation_directions_3, .animation_directions_2, .animation_directions_1, .animation_directions_5, .animation_directions_6, .animation_directions_7, .animation_directions_8 {
+	text-align: center;	
 	}
 }
 
@@ -18,9 +21,11 @@
 	.section_content .resume_container h3,
 	.resume_container .resume_icon {
 		text-align: left;
-		margin-bottom: 10px 
+		margin-bottom: 10px; 
 	}
-
+	.top_button {
+		display: none;
+	}	
 }
 
 /* Extra Small Devices, Phones */

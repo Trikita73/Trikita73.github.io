@@ -30,7 +30,7 @@ section,
 		margin-top: 0
 		margin-bottom: 35px
 
-// -->
+//SASS: Section layout -->
 
 section
 	padding: 70px 0 80px
@@ -63,13 +63,13 @@ section
 			margin-left: -75px
 			margin-top: 60px
 
-// -->
+//SASS: Header -->
 
 .main_head
 	min-height: 620px
 	padding-top: 20px
 
-//responsible loader-->	
+//SASS: Responsible loader -->	
 
 .loader 
 	background: none repeat scroll 0 0 #ffffff
@@ -82,7 +82,7 @@ section
 	width: 100%
 	z-index: 9999
 
-//responsible loanding-->
+//SASS: Responsible loanding -->
 
 .loader_inner 
 	background-image: url("../img/preloader2.gif")
@@ -90,15 +90,15 @@ section
 	background-repeat: no-repeat
 	background-position: center center
 	background-color: #fff
-	height: 60px
-	width: 60px
+	height: 85px
+	width: 85px
 	margin-top: -30px
 	margin-left: -30px
 	left: 50%
 	top: 50%
 	position: absolute
 
-//responsible logo-->
+//SASS: Responsible logo -->
 
 .logo_container
 	float: left
@@ -109,12 +109,13 @@ svg
 	z-index: 100
 	position: relative
 
-//responsible stripes design-->
+//SASS: Responsible stripes design -->
 
 .toggle_mnu
-	background-color: #000
-	width: 60px
-	height: 60px
+	background-color: #222
+	border-radius: 3px
+	width: 56px
+	height: 56px
 	float: right
 	position: fixed
 	z-index: 100
@@ -124,7 +125,7 @@ svg
 	span
 		display: block	
 
-// menu button decor-->
+//SASS: Menu button decor -->
 
 $w: 34px
 $h: 3px
@@ -150,8 +151,7 @@ $h: 3px
 	border-radius: 4px 4px 4px 4px
 	transition: transform 0.5s, top 0.2s
 	display: block
-
-	//transition-delay: 0,2s, 0s
+	transition-delay: 0,2s, 0s
 
 .sw-bottom
 	position: relative
@@ -167,7 +167,7 @@ $h: 3px
 .sw-footer
 	position: relative
 	width: $w 
-	height: $h
+	height: 2px
 	top: 6px
 	background: rgb(225, 225, 225)
 	border: none
@@ -187,7 +187,7 @@ $h: 3px
 		top: 0
 		transform: rotate(180deg) 	
 
-// menu design-->	
+//SASS: Menu design -->	
 
 .top_mnu	
 	position: fixed
@@ -215,6 +215,8 @@ $h: 3px
 				+animation-duration(1.5s)
 			&:nth-child(4) a
 				+animation-duration(2s)
+			&:nth-child(5) a
+				+animation-duration(2.5s)
 		a
 			color: #fff
 			display: block
@@ -234,7 +236,7 @@ $h: 3px
 				&:hover	
 					background-color: rgba(255,255,255,.08)
 
-// nickname in the center-->
+//SASS: Nickname in the center -->
 
 .top_wrapper
 	display: table
@@ -266,19 +268,19 @@ $h: 3px
 			font-size: 2.8em
 			background-color: rgba(0,0,0,.4)
 
-			//box-shadow: rgba(0,0,0,.3) 0 0 0 1000px
+			box-shadow: rgba(0,0,0,.2) 0 -225px 0 500px
 
 			margin-left: 20px
 			margin-right: 20px
 			+animation-delay(1s)
 
-// -->
+//SASS: Opacity -->
 
 .h_opacify
 	opacity: .3
 	+transition(all .2s ease)
 
-// -->
+//SASS: Section Footer -->
 
 .main_footer
 	padding: 50px 0
@@ -290,7 +292,7 @@ $h: 3px
 		ul 
 			margin: 0
 
-// -->
+//SASS: Img Section About -->
 
 .person
 	text-align: center
@@ -300,7 +302,7 @@ $h: 3px
 		display: inline-block
 		border-radius: 50%
 
-// -->
+//SASS: Section About -->
 
 .s_about		
 	p
@@ -315,7 +317,7 @@ $h: 3px
 	.social_wrap
 		margin-bottom: 25px
 
-// -->
+//SASS: Social Network -->
 
 .social_wrap
 	li
@@ -323,7 +325,7 @@ $h: 3px
 		font-size: 20px	
 		padding: 0 3px	
 
-// -->
+//SASS: Section Resume -->
 
 .resume_container 
 	.left
@@ -370,7 +372,7 @@ $h: 3px
 		p
 			margin-bottom: 0
 
-// -->
+//SASS: Section Portfolio -->
 
 .s_portfolio
 	ul,
@@ -417,8 +419,6 @@ $h: 3px
 		padding: 2px 10px
 		display: inline-block
 
-// -->
-
 .podrt_descr
 	background-color: #fff
 	max-width: 500px
@@ -443,6 +443,8 @@ $h: 3px
 .modal-box-content
 	position: relative
 
+//SASS: Form CallBack -->
+
 .contact_box
 	margin-bottom: 30px
 	h3
@@ -454,8 +456,6 @@ $h: 3px
 		font-size: 30px
 	p
 		margin-top: 5px
-
-//SASS: -->
 
 .main_form
 	button
@@ -483,7 +483,27 @@ $h: 3px
 		font-size: 12px
 		background-color: transparent
 
+//SASS: Scroll Top -->
 
+#s_top
+	cursor: pointer 
+	position: fixed 
+	opacity: 0.4 
+	right: 4px 
+	bottom: 4px
+
+.top_button 
+	width: 35px 
+	height: 35px
+	background-color: #222 
+	font-size: 17px
+	padding: 0 
+	bottom: 0
+	border-radius: 3px 
+	border: medium none 
+	bottom: 20px
+	&:hover 
+		transition: all .5s
 
 
 
