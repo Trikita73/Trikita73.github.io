@@ -57,6 +57,10 @@ section h3 {
 .s_about p:nth-child(even) {
   color: #4a800c; }
 
+.animation_directions_1 a, .animation_directions_2 a, .port_item_direct a {
+  border-color: #4a800c;
+  color: #4a800c; }
+
 .resume_container h3 {
   color: #222;
   letter-spacing: 1px; }

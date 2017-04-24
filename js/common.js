@@ -3,6 +3,7 @@ $(document).ready(function() {
 	//JQuery: This element is responsible for portfilio img -->
 
 	$("#portfolio_grid").mixItUp();
+	$("#directions_grid").mixItUp();
 
 	//JQuery: ///+/// -->
 
@@ -15,6 +16,7 @@ $(document).ready(function() {
 
 	$(".popup").magnificPopup({type:"image"});
 	$(".popup_content").magnificPopup({type:"inline"});
+	$(".popup_direct").magnificPopup({type:"inline"});
 
 	//JQuery: This code animation in the section About -->
 
@@ -22,31 +24,13 @@ $(document).ready(function() {
 	$(".animation_2").animated("fadeInLeft", "fadeOutDown");
 	$(".animation_3").animated("fadeInRight", "fadeOutDown");
 
-	//JQuery: =///+///+///= -->
-
-		$(".animation_directions_1").click(function () {
-  		$("div:eq(0)").show("fast", function () {
-    	// use callee so don't have to name the function
-    	$(this).next().show("fast", arguments.callee);
-  		});
-		});
-		$(".animation_directions_1").click(function () {
- 	 	$(".animation_directions_1").hide(2000);
-		});
-
 	//JQuery: He is responsible for the animation section directions Top -->
 
-	$(".animation_directions_4").animated("fadeInLeft", "fadeOutDown");
-	$(".animation_directions_3").animated("fadeInLeft", "fadeOutDown");
-	$(".animation_directions_2").animated("fadeInLeft", "fadeOutDown");
 	$(".animation_directions_1").animated("fadeInLeft", "fadeOutDown");
 
 	//JQuery: He is responsible for the animation section directions Bottom-->
 
-	$(".animation_directions_5").animated("fadeInRight", "fadeOutDown");
-	$(".animation_directions_6").animated("fadeInRight", "fadeOutDown");
-	$(".animation_directions_7").animated("fadeInRight", "fadeOutDown");
-	$(".animation_directions_8").animated("fadeInRight", "fadeOutDown");
+	$(".animation_directions_2").animated("fadeInRight", "fadeOutDown");
 
 	//JQuery: This code animation left and right section resume -->
 
@@ -95,12 +79,20 @@ $(document).ready(function() {
 		};			
 	});
 
-	//JQuery: This code is responsible for MagnificPopup at Portfolio -->
+	//JQuery: This code is responsible for MagnificPopup at Portfolio and Directions -->
 
 	$(".portfolio_item").each(function(i) {
 		$(this).find("a").attr("href", "#work_" + i);
 		$(this).find(".podrt_descr").attr("id", "work_" + i);
 	});
+	$(".animation_directions_1").each(function(i) {
+		$(this).find("a").attr("href", "#work_" + i);
+		$(this).find(".podrt_direct").attr("id", "work_" + i);
+	});
+	$(".animation_directions_2").each(function(i) {
+		$(this).find("a").attr("href", "#work_" + i);
+		$(this).find(".podrt_direct").attr("id", "work_" + i);
+	})
 
 	//JQuery: ///+/// -->
 
