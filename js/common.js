@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	//JQuery: The script is responsible section portfolio myParallax -->
+
+	$('#portfolio').myParallax({
+		"speed" : "25"
+	});
+
 	//JQuery: This element is responsible for portfilio img -->
 
 	$("#portfolio_grid").mixItUp();
