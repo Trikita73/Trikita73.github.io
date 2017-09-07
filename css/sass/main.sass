@@ -507,14 +507,13 @@ $h: 3px
 
 //SASS: Section Directions -->
 
-.animation_directions_1, 
-.animation_directions_2
+.animation_directions_1
 	display: none
 	padding: 0
 	margin-bottom: 10px
 	img
 		width: 95%
-		height: 95%
+		height: 260px
 		border: 1px solid #fff
 	.port_item_direct
 		position: absolute	
@@ -564,6 +563,56 @@ $h: 3px
 .modal-box-direct
 	position: relative
 
+.line_content
+	height: 1px
+	background-color: #222
+	margin-top: 315px
 
-
-
+.animation_directions_1
+	img
+		position: relative
+		z-index: 1
+		transition: all 0.4s 
+		&:hover 	
+			opacity: 0.8
+			filter: alpha(opacity=80) black
+			-khtml-opacity: 0.8
+			background-color: #000
+			transition: all 0.6s ease 0.6s
+	div.item_directions		
+		position: absolute
+		width: 95%
+		z-index: 0
+		bottom: 0
+		left: 0
+		padding: 8px
+		background-color: #222
+		color: white
+		border-right: 1px solid #fff
+		border-left: 1px solid #fff
+		border-bottom: 1px solid #fff
+		transition: all 0.4s ease 0.4s
+		opacity: 1
+		p
+			text-align: center
+	&:hover
+		.item_directions
+			z-index: 0				
+			transform: translate(0, 100%)
+	.content_item
+		position: absolute		
+		top: 0
+		left: 0
+		width: 95%
+		height: 100%
+		text-align: center
+		padding-top: 30%
+		opacity: 1
+		color: #fff
+		transition: all 0.6s
+		p
+			color: #fff
+			opacity: 1
+			font-size: 16px
+			text-transform: uppercase
+			letter-spacing: 0.2em

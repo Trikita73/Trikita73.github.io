@@ -132,11 +132,13 @@ svg {
   background: #e1e1e1;
   border: none;
   border-radius: 4px 4px 4px 4px;
+  -webkit-transition: top 0.2s, -webkit-transform 0.5s;
   transition: top 0.2s, -webkit-transform 0.5s;
   transition: transform 0.5s, top 0.2s;
   transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
   display: block;
-  transition-delay: 0,2s, 0s; }
+  -webkit-transition-delay: 0, 2s, 0s;
+          transition-delay: 0, 2s, 0s; }
 
 .sw-bottom {
   position: relative;
@@ -146,10 +148,12 @@ svg {
   background: #e1e1e1;
   border: none;
   border-radius: 4px 4px 4px 4px;
+  -webkit-transition: top 0.2s, -webkit-transform 0.5s;
   transition: top 0.2s, -webkit-transform 0.5s;
   transition: transform 0.5s, top 0.2s;
   transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
-  transition-delay: 0,2s, 0s; }
+  -webkit-transition-delay: 0, 2s, 0s;
+          transition-delay: 0, 2s, 0s; }
 
 .sw-footer {
   position: relative;
@@ -159,27 +163,24 @@ svg {
   background: #e1e1e1;
   border: none;
   border-radius: 4px 4px 4px 4px;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  transition-delay: 0.1s; }
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s; }
 
 .sandwich.active .sw-topper {
   top: 0;
   -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg); }
-
+          transform: rotate(-45deg); }
 .sandwich.active .sw-bottom {
   top: -3px;
   -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
+          transform: rotate(45deg); }
 .sandwich.active .sw-footer {
   opacity: 0;
   top: 0;
   -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg); }
+          transform: rotate(180deg); }
 
 .top_mnu {
   position: fixed;
@@ -200,23 +201,18 @@ svg {
     text-align: center; }
     .top_mnu ul li:nth-child(1) a {
       -webkit-animation-duration: 0.5s;
-      -moz-animation-duration: 0.5s;
       animation-duration: 0.5s; }
     .top_mnu ul li:nth-child(2) a {
       -webkit-animation-duration: 1s;
-      -moz-animation-duration: 1s;
       animation-duration: 1s; }
     .top_mnu ul li:nth-child(3) a {
       -webkit-animation-duration: 1.5s;
-      -moz-animation-duration: 1.5s;
       animation-duration: 1.5s; }
     .top_mnu ul li:nth-child(4) a {
       -webkit-animation-duration: 2s;
-      -moz-animation-duration: 2s;
       animation-duration: 2s; }
     .top_mnu ul li:nth-child(5) a {
       -webkit-animation-duration: 2.5s;
-      -moz-animation-duration: 2.5s;
       animation-duration: 2.5s; }
     .top_mnu ul a {
       color: #fff;
@@ -234,7 +230,6 @@ svg {
         left: 0;
         height: 100%;
         -webkit-transition: all 0.5s ease;
-        -moz-transition: all 0.5s ease;
         transition: all 0.5s ease; }
         .top_mnu ul a span:hover {
           background-color: rgba(255, 255, 255, 0.08); }
@@ -259,7 +254,6 @@ svg {
       margin: 0;
       text-transform: uppercase;
       -webkit-animation-delay: 1.5s;
-      -moz-animation-delay: 1.5s;
       animation-delay: 1.5s; }
     .top_wrapper .top_text h1 {
       display: inline-block;
@@ -270,17 +264,16 @@ svg {
       font-weight: bold;
       font-size: 2.8em;
       background-color: rgba(0, 0, 0, 0.4);
-      box-shadow: rgba(0, 0, 0, 0.2) 0 -225px 0 520px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -225px 0 500px;
+              box-shadow: rgba(0, 0, 0, 0.2) 0 -225px 0 500px;
       margin-left: 20px;
       margin-right: 20px;
       -webkit-animation-delay: 1s;
-      -moz-animation-delay: 1s;
       animation-delay: 1s; }
 
 .h_opacify {
-  opacity: .3;
+  opacity: 0.3;
   -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
   transition: all 0.2s ease; }
 
 .main_footer {
@@ -303,16 +296,13 @@ svg {
 
 .s_about p {
   margin-bottom: 25px; }
-
 .s_about ul,
 .s_about li {
   margin: 0;
   padding: 0;
   list-style-type: none; }
-
 .s_about li {
   margin-bottom: 10px; }
-
 .s_about .social_wrap {
   margin-bottom: 25px; }
 
@@ -326,23 +316,19 @@ svg {
   border-right: #d2d2d2 1px solid; }
   .resume_container .left h3 {
     text-align: right; }
-
 .resume_container .right {
   text-align: left; }
   .resume_container .right h3 {
     text-align: left; }
-
 .resume_container h3 {
   margin-top: 30px;
   letter-spacing: 0;
   font-size: 16px;
   font-weight: 600; }
-
 .resume_container .year {
   color: #fff;
   font-weight: 600;
   font-style: italic; }
-
 .resume_container strong {
   font-weight: 600;
   font-style: normal;
@@ -375,7 +361,6 @@ svg {
   padding: 0;
   margin: 0;
   text-align: center; }
-
 .s_portfolio li {
   display: inline-block;
   margin: 0 10px;
@@ -383,7 +368,6 @@ svg {
   font-size: 12px;
   cursor: pointer;
   line-height: 2; }
-
 .s_portfolio ul {
   margin-bottom: 50px; }
 
@@ -402,7 +386,8 @@ svg {
     text-align: center;
     padding-top: 15%;
     opacity: 0;
-    transition: all .5s; }
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
   .portfolio_item:hover .port_item_cont {
     opacity: 1;
     padding-top: 20%; }
@@ -494,20 +479,18 @@ svg {
   border: medium none;
   bottom: 20px; }
   .top_button:hover {
-    transition: all .5s; }
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
 
-.animation_directions_1,
-.animation_directions_2 {
+.animation_directions_1 {
   display: none;
   padding: 0;
   margin-bottom: 10px; }
-  .animation_directions_1 img,
-  .animation_directions_2 img {
+  .animation_directions_1 img {
     width: 95%;
-    height: 95%;
+    height: 260px;
     border: 1px solid #fff; }
-  .animation_directions_1 .port_item_direct,
-  .animation_directions_2 .port_item_direct {
+  .animation_directions_1 .port_item_direct {
     position: absolute;
     top: 0;
     left: 0;
@@ -517,18 +500,16 @@ svg {
     text-align: center;
     padding-top: 15%;
     opacity: 0;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     border-top: 5px; }
-  .animation_directions_1:hover .port_item_direct,
-  .animation_directions_2:hover .port_item_direct {
+  .animation_directions_1:hover .port_item_direct {
     opacity: 1;
     padding-top: 20%; }
-  .animation_directions_1 h3,
-  .animation_directions_2 h3 {
+  .animation_directions_1 h3 {
     color: #fff;
     margin-bottom: 0; }
-  .animation_directions_1 a,
-  .animation_directions_2 a {
+  .animation_directions_1 a {
     background-color: transparent;
     border: #fff 1px solid;
     padding: 2px 10px;
@@ -557,3 +538,60 @@ svg {
 
 .modal-box-direct {
   position: relative; }
+
+.line_content {
+  height: 1px;
+  background-color: #222;
+  margin-top: 315px; }
+
+.animation_directions_1 img {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s; }
+  .animation_directions_1 img:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80) black;
+    -khtml-opacity: 0.8;
+    background-color: #000;
+    -webkit-transition: all 0.6s ease 0.6s;
+    transition: all 0.6s ease 0.6s; }
+.animation_directions_1 div.item_directions {
+  position: absolute;
+  width: 95%;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  padding: 8px;
+  background-color: #222;
+  color: white;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transition: all 0.4s ease 0.4s;
+  transition: all 0.4s ease 0.4s;
+  opacity: 1; }
+  .animation_directions_1 div.item_directions p {
+    text-align: center; }
+.animation_directions_1:hover .item_directions {
+  z-index: 0;
+  -webkit-transform: translate(0, 100%);
+          transform: translate(0, 100%); }
+.animation_directions_1 .content_item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 100%;
+  text-align: center;
+  padding-top: 30%;
+  opacity: 1;
+  color: #fff;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s; }
+  .animation_directions_1 .content_item p {
+    color: #fff;
+    opacity: 1;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; }

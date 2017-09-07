@@ -34,10 +34,6 @@ $(document).ready(function() {
 
 	$(".animation_directions_1").animated("fadeInLeft", "fadeOutDown");
 
-	//JQuery: He is responsible for the animation section directions Bottom-->
-
-	$(".animation_directions_2").animated("fadeInRight", "fadeOutDown");
-
 	//JQuery: This code animation left and right section resume -->
 
 	$(".left .resume_item").animated("fadeInLeft", "fadeOutDown");

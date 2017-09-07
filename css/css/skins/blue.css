@@ -34,7 +34,6 @@ svg path {
 
 .top_mnu a:hover {
   color: #2EA2CC; }
-
 .top_mnu a {
   letter-spacing: 4px; }
 
@@ -60,23 +59,19 @@ section h3 {
 .resume_container h3 {
   color: #222;
   letter-spacing: 1px; }
-
 .resume_container .left .resume_description strong {
   margin-left: 10px; }
-
 .resume_container .right .resume_description strong {
   margin-right: 10px; }
 
 .resume_item .year {
   background-color: #2EA2CC; }
-
 .resume_item .resume_description {
   letter-spacing: 1px; }
 
 .s_portfolio li {
   color: #888;
   letter-spacing: 2px; }
-
 .s_portfolio li.active {
   color: #fff;
   border-bottom: 1px solid #2EA2CC; }
@@ -94,17 +89,21 @@ section h3 {
 form input:focus,
 form textarea:focus {
   border: 1px solid #2EA2CC; }
-
 form input,
 form textarea {
   letter-spacing: 2px; }
-
 form button {
   background-color: #2EA2CC;
   letter-spacing: 2px; }
-
 form .form-group {
   letter-spacing: 2px;
   color: #888; }
   form .form-group li {
     color: #FF6347; }
+
+.top_button {
+  color: #fff; }
+  .top_button:hover {
+    color: #2EA2CC; }
+
+/*# sourceMappingURL=blue.css.map */
