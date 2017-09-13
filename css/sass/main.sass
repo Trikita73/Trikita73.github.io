@@ -208,15 +208,15 @@ $h: 3px
 		text-align: center
 		li
 			&:nth-child(1) a
-				+animation-duration(.5s)
+				+animation-duration(.8s)
 			&:nth-child(2) a
 				+animation-duration(1s)
 			&:nth-child(3) a
-				+animation-duration(1.5s)
+				+animation-duration(1.6s)
 			&:nth-child(4) a
-				+animation-duration(2s)
+				+animation-duration(2.1s)
 			&:nth-child(5) a
-				+animation-duration(2.5s)
+				+animation-duration(2.6s)
 		a
 			color: #fff
 			display: block
@@ -324,6 +324,10 @@ $h: 3px
 		display: inline-block
 		font-size: 20px	
 		padding: 0 3px	
+		a
+			&:hover
+				transition: 0.25s
+				color: #000	
 
 //SASS: Section Resume -->
 
@@ -442,7 +446,12 @@ $h: 3px
 
 .modal-box-content
 	position: relative
-
+	a
+		display: block
+		font-size: 20px
+		text-align: center
+	p
+		text-align: center	
 //SASS: Form CallBack -->
 
 .contact_box
@@ -507,7 +516,8 @@ $h: 3px
 
 //SASS: Section Directions -->
 
-.animation_directions_1
+.animation_directions_1,
+.animation_directions_2
 	display: none
 	padding: 0
 	margin-bottom: 10px
@@ -568,7 +578,10 @@ $h: 3px
 	background-color: #222
 	margin-top: 315px
 
-.animation_directions_1
+//SASS: Section Directions animated -->
+
+.animation_directions_1,
+.animation_directions_2
 	img
 		position: relative
 		z-index: 1

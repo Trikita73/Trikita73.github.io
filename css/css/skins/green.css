@@ -110,4 +110,15 @@ form .form-group {
   .top_button:hover {
     color: #4a800c; }
 
-/*# sourceMappingURL=green.css.map */
+.animation_1 h3,
+.animation_2 h3,
+.animation_3 h3 {
+  color: #222; }
+.animation_1 p,
+.animation_2 p,
+.animation_3 p {
+  color: #222; }
+.animation_1 li,
+.animation_2 li,
+.animation_3 li {
+  color: #222; }
